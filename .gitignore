@@ -1,0 +1,10 @@
+# Training outputs
+logs/
+outputs/
+
+# Python caches
+__pycache__/
+*/__pycache__/
+
+# Egg metadata
+*.egg-info/
