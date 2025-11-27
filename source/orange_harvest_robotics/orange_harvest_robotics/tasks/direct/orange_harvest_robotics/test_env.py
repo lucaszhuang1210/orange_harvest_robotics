@@ -41,8 +41,8 @@ simulation_app = app_launcher.app
 import gymnasium as gym
 import numpy as np
 
-import Citrus.tasks.direct.citrus  # noqa: F401
-from Citrus.tasks.direct.citrus.citrus_cutting_env import CitrusCuttingEnvCfg
+import orange_harvest_robotics.tasks.direct.orange_harvest_robotics  # noqa: F401
+from orange_harvest_robotics.tasks.direct.orange_harvest_robotics.citrus_cutting_env import CitrusCuttingEnvCfg
 
 
 def print_env_info(env):
@@ -234,7 +234,7 @@ def main():
     # Create environment
     print("\nCreating environment...")
     try:
-        env = gym.make("Isaac-Citrus-Cutting-Direct-v0", cfg=env_cfg)
+        env = gym.make("Template-Citrus-Cutting-Direct-v0", cfg=env_cfg)
         print("✅ Environment created successfully")
     except Exception as e:
         print(f"❌ Failed to create environment: {e}")
