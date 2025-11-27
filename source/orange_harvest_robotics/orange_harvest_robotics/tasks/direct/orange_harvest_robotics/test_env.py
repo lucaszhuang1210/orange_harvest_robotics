@@ -50,7 +50,7 @@ def print_env_info(env):
     print(f"\n{'='*70}")
     print("ENVIRONMENT INFO")
     print(f"{'='*70}")
-    print(f"Task: Isaac-Citrus-Cutting-Direct-v0")
+    print(f"Task: Template-Citrus-Cutting-Direct-v0")
     print(f"Num envs: {env.unwrapped.num_envs}")
     print(f"Device: {env.unwrapped.device}")
     print(f"Physics dt: {env.unwrapped.cfg.sim.dt:.4f}s")
@@ -271,7 +271,7 @@ def main():
         print("✅ ALL TESTS PASSED")
         print("\nEnvironment is ready for training!")
         print("\nNext steps:")
-        print("  1. python scripts/train_citrus.py --task Isaac-Citrus-Cutting-Direct-v0 --num_envs 64")
+        print("  1. python scripts/train_citrus.py --task Template-Citrus-Cutting-Direct-v0 --num_envs 64")
         print("  2. tensorboard --logdir logs/rsl_rl")
     else:
         print("❌ SOME TESTS FAILED")
