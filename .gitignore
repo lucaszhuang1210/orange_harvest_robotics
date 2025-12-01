@@ -1,3 +1,6 @@
+__MACOSX/
+.DS_Store
+
 # Training outputs
 logs/
 outputs/
